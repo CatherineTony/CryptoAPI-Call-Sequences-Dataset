@@ -1,0 +1,215 @@
+﻿Indentifier;NL annotation;GitHub Sequence
+1001;encrypt or decrypt a string using a password;Cipher.ENCRYPT_MODE Cipher.DECRYPT_MODE PBEParameterSpec.new PBEKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.init Cipher.doFinal
+1002;parse public key from pem format;StringReader.new PEMParser.new SubjectPublicKeyInfo.new PEMParser.readObject PublicKeyFactory.createKey RSAKeyParamter.getModulus RSAKeyParameter.getExponent RSAPublicKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic
+1003;decrypted string;Base64Utils.decodeFromString PKCS8EncodedKeySpec.new String.getBytes Cipher.DECRYPT_MODE KeyFactory.getInstance KeyFactory.generatePrivate Cipher.getInstance Cipher.init Cipher.doFinal
+1004;ecb mode decryption;Base64Encoder.new SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal Base64Encoder.encode
+1005;get ecpublickey from byte array;KeyFactory.getInstance X509EncodedKeySpec.new KeyFactory.generatePublic
+1006;load a public key from a string;Base64Utils.decode KeyFactory.getInstance X509EncodedKeySpec.new KeyFactory.generatePublic
+1007;verify digital signature;Base64Utils.decode X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Signature.getInstance Signature.initVerify Signature.update Base64Utils.decode Siganture.verify
+1008;public key encryption process;Base64Utils.decode KeyFactory.getInstance X509EncodedKeySpec.new KeyFactory.generatePublic Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1009;read key (private key) pfx format in pkcs12 format;KeyStore.getInstance KeyStore.load KeyStore.aliases KeyStore.getKey
+1010;decrypt encrypted file using cipherinputstream, decrypt using rsa private key;Base64.getDecoder.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init FileOutputStream.new FileOutputStream.write FileOutputStream.close
+1011;public key decryption;KeyFactory.getInstance Base64.decodeBase64 X509EncodedKeySpec.new KeyFactory.generatePublic Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init String.getBytes RSAPublicKey.getModulus.bitLength ByteArrayOutputStream.new Cipher.doFinal ByteArrayOutputStream.write ByteArrayOutputStream.toByteArray IOUtils.closeQuietly
+1012;perform tripledes decryption;Cipher.getInstance String.getBytes SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1013;private key encryption;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPrivate KeyPair.getPublic Key.getEncoded Base64.encode String.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init ByteArrayOutputStream.new Cipher.doFinal Base64. encodeBase64URLSafeString
+1014;encryption decryption;Cipher.ENCRYPT_MODE String.getBytes Base64.getDecoder.decode Cipher.getInstance String.getBytes SecretKeySpec.new IvParameterSpec.new Cipher.init Cipher.doFinal Base64.getEncoder.encode String.new
+1015;encrypt or decrypt a file using a password;Cipher.ENCRYPT_MODE Cipher.DECRYPT_MODE PBEParameterSpec.new PBEKeySpec .new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.init FileInputStream.new BufferedInputStream.new FileOutputStream.new BufferedOutputStream.new byte.new BufferedInputStream.read Cipher.update BufferedOutputStream.write Cipher.doFinal
+1016;create a new public and private key;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPublic Key.getEncoded Base64.encodeBase64URLSafeString KeyPair.getPrivate Key.getEncoded Base64.encodeBase64URLSafeString
+1017;rsa algorithm private key to encrypt data;Base64.getDecoder.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate KeyFactory.getAlgorithm Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Base64.getEncoder.encodeToString
+1018;encrypts or decrypts an unencoded raw byte array using aes;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.init Cipher.doFinal
+1019;ecb mode encryption;Base64Encoder.new SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal Base64Encoder.encode
+1020;encrypts or decrypts an unencoded raw byte array using aes, returning the result as an unencoded byte array.;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.init Cipher.doFinal
+1021;rsa verification signature check;KeyFactory.getInstance Base64.decodeBase64 X509EncodedKeySpec.new KeyFactory.generatePublic Signature.getInstance Signature.initVerify String.getBytes Signature.update Signature.verify
+1022;generate an aes key with optional lengths;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded
+1023;get public key;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPublic Key.getEncoded Base64.encode String.new
+1024;encryption;Cipher.getInstance SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1025;public key decryption process;Base64Utils.decode KeyFactory.getInstance X509EncodedKeySpec.new KeyFactory.generatePublic Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Base64Utils.decode Cipher.doFinal String.new
+1026;cbc using des with an iv based on a nonce. decryption pass. decrypt message;byte.new byte.new byte.new IvParameterSpec.new SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal IvParameterSpec.new Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal IvParameterSpec.new Cipher.DECRYPT_MODE Cipher.init Cipher.update Cipher.doFinal
+1027;3desecb decryption;String.getBytes DESedeKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Base64.encodeBase64String
+1028;generate random;byte.new SecureRandom.new SecureRandom.nextBytes
+1029;key generator;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPublic KeyPair.getPrivate RSAPublicKey.getEncoded Base64.encodeBase64String RSAPrivateKey.getEncoded Base64.encodeBase64String
+1030;decryption function;DESKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance IvParameterSpec.new Cipher.DECRYPT_MODE Cipher.doFinal 
+1031;get ecprivatekey from byte array;KeyFactory.getInstance PKCS8EncodedKeySpec.new KeyFactory.generatePrivate
+1032;parse public key from base64 x509 pkcs8 fromat;Base64.getDecoder.decode X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic
+1033;encryption;KeyGenerator.getInstance SecureRandom.getInstance SecureRandom.setSeed String.getBytes KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.getBytes Cipher.doFinal BASE64Encoder.new.encode
+1034;cbc using des with an iv based on a nonce. encryption pass. encrypt message;byte.new byte.new byte.new IvParameterSpec.new SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal IvParameterSpec.new Cipher.ENCRYPT_MODE Cipher.init Cipher.getOutputSize Cipher.update Cipher.doFinal
+1035;convert private key to encrypted pem format;StringWriter.new JcaPEMWriter.new RSAPrivateKey.getEncoded PrivateKeyInfo.getInstance PKCS8Generator.new JcaPEMWriter.writeObject JcaPEMWriter.flush
+1036;encryption function;SecureRandom.new DESKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1037;encryption;SecureRandom.new String.getBytes DESKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1038;encrypt by key;String.getBytes SecureRandom.new DESKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1039;encrypted data;Cipher.ENCRYPT_MODE Cipher.init InputStream.available CipherOutputStream.new byte.new InputStream.read CipherOutputStream.write InputStream.close CipherOutputStream.flush
+1040;private key encryption;KeyFactory.getInstance Base64.decodeBase64 PKCS8EncodedKeySpec.new KeyFactory.generatePrivate Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.getBytes RSAPrivateKey.getModulus.bitLength ByteArrayOutputStream.new Cipher.doFinal ByteArrayOutputStream.write ByteArrayOutputStream.toByteArray IOUtils.closeQuietly
+1041;des encryption/decryption public method;SecureRandom.new String.getBytes DESKeySpec.new SecretKeyFactory.getInstance Cipher.getInstance SecretKeyFactory.generateSecret Cipher.ENCRYPT_MODE String.getBytes Cipher.doFinal
+1042;decrypt the data;byte.new IvParameterSpec.new Cipher.getInstance Cipher.DECRYPT_MODE SecretKeySpec.new Cipher.init Cipher.doFinal
+1043;decryption function;SecureRandom.new DESKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1044;des decryption;String.getBytes SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE URLDecoder.decode Base64Decoder.new Base64Decoder.decodeBuffer Cipher.doFinal String.new
+1045;encrypt data without v;Securtiy.addProvider Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1046;get public key;KeyFactory.getInstance X509EncodedKeySpec.new KeyFactory.generatePublic
+1047;encryption function;DESKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance IvParameterSpec.new Cipher.ENCRYPT_MODE Cipher.doFinal 
+1048;public key encryption;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPrivate KeyPair.getPublic Key.getEncoded Base64.encode String.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init ByteArrayOutputStream.new Cipher.doFinal RSAPrivateKey.getModulus.bitLength Base64. encodeBase64URLSafeString
+1049;how to generate a symmetric key;KeyGenerator.getInstance KeyGenerator.generateKey FileOutputStream.new ObjectOutputStream.new ObjectOutputStream.writeObject
+1050;des encryption;Cipher.getInstance String.getBytes SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1051;md5 encryption;String.getBytes MessageDigest.getInstance MessageDigest.update MessageDigest.digest String.new
+1052;encrypt source file with cipherinputstream, encrypt with rsa public key;Base64.getDecoder.decode X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init FileOutputStream.new FileOutputStream.write FileOutputStream.close
+1053;randomly generated key pairs;KeyPairGenerator.getInstance SecureRandom.new KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPrivate KeyPair.getPublic RSAPublicKey.getEncoded Base64.encode RSAPrivateKey.getEncoded Base64.encode
+1054;iv encryption;Cipher.getInstance SecretKeySpec.new IvParameterSpec.new Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1055;get private key;KeyFactory.getInstance Base64.decodeBase64 PKCS8EncodedKeySpec.new KeyFactory.generatePrivate
+1056;rsa algorithm public key encryption data;Base64.getDecoder.decode X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic KeyFactory.getAlgorithm Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Base64.getEncoder.encodeToString
+1057;rsa signature;Base64Utils.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Signature.getInstance Signature.initSign String.getBytes Signature.update Signature.sign Base64Utils.encode
+1058;parse private key from pkcs8 format;Base64.getDecoder.decode KeyFactory.getInstance PKCS8EncodedKeySpec.new KeyFactory.generatePrivate
+1059;ca signed certificate;X509Certificate.getEncoded X509CertImpl.new X509CertImpl.NAME X509CertImpl.INFO X509CertImpl.get X509CertInfo.SUBJECT CertificateIssuerName.DN_NAME X509CertInfo.get X509CertInfo.ISSUER X509CertInfo.set X509CertImpl.new X509Certificate.getSigAlgName X509CertImpl.sign
+1060;private key decryption;Base64.getDecoder Base64.decode KeyFactory.getInstance PKCS8EncodedKeySpec.new KeyFactory.generatePrivate KeyFactory.getInstance Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.getOutputSize Cipher.doFinal
+1061;get the public key;KeyFactory.getInstance Base64.decodeBase64 X509EncodedKeySpec.new KeyFactory.generatePublic
+1062;symmetric encryption/decryption string common algorithm;Cipher.ENCRYPT_MODE Cipher.DECRYPT_MODE Cipher.getInstance Cipher.init Cipher.doFinal
+1063;3-fold des decryption;SecureRandom.new String.getBytes DESedeKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Strin.getBytes Cipher.doFinal Base64.getDecoder.decode String.new
+1064;perform ansi99mac encryption and decryption;String.getBytes byte.new SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1065;des decryption;Cipher.getInstance String.getBytes SecretKeySpec.new Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1066;data signature;Signature.getInstance Signature.initSign Signature.update Signature.sign
+1067;generate public and private keys;byte.new KeyPairGenerator.getInstance SecureRandom.new KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPrivate.getEncoded KeyPair.getPublic.getEncoded
+1068;encrypt text file;FileInputStream.new FileOutputStream.new String.getBytes SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init CipherOutputStream.new FileInputStream.read CipherOutputStream.write CipherOutputStream.flush CipherOutputStream.close FileInputStream.close
+1069;get private key;KeyFactory.getInstance PKCS8EncodedKeySpec.new KeyFactory.generatePrivate
+1070;public key decryption;X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Cipher.getInstance Cipher.init ByteArrayOutputStream.new Cipher.doFinal ByteArrayOutputStream.write ByteArrayOutputStream.close
+1071;private key encryption process;Base64Utils.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Base64Utils.encode
+1072;des encryption without urlencoder;String.getBytes SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Base64Encoder.new Base64Encoder.encode
+1073;perform ansi98 encryption;String.getBytes SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1074;public key encryption;X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Cipher.getInstance Cipher.init ByteArrayOutputStream.new Cipher.doFinal ByteArrayOutputStream.write ByteArrayOutputStream.close
+1075;aes decryption;String.getBytes SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE URLDecoder.decode Base64Decoder.new Base64Decoder.decodeBuffer Cipher.doFinal String.new
+1076;aes encryption/decryption;KeyGenerator.getInstance SecureRandom.getInstance String.getBytes SecureRandom.setSeed KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.init Cipher.doFinal
+1077;aes encryption without urlencoder;Cipher.getInstance String.getBytes SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Base64Encoder.new Base64Encoder.encode
+1078;build rsaprivatekey with modulus and privateexponent;KeyFactory.getInstance KeyFactory.generatePrivate RSAPrivateKeySpec.new
+1079;key generation;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPublic KeyPair.getPrivate
+1080;iv decryption;Cipher.getInstance SecretKeySpec.new IvParameterSpec.new Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1081;encrypted string;Base64Utils.decodeFromString X509EncodedKeySpec.new String.getBytes Cipher.ENCRYPT_MODE KeyFactory.getInstance KeyFactory.generatePublic Cipher.getInstance Cipher.init Cipher.doFinal
+1082;create keystore;KeyStore.getInstance KeyStore.load
+1083;compute string info digest public method;String.getBytes MessageDigest.getInstance MessageDigest.update MessageDigest.digest NumberUtil.byteToHex
+1084;check;X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Siganture.getInstance Signature.initVerify Signature.update Siganture.verify
+1085;encryption;Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1086;descbc decryption;String.getBytes DESKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret IvParameterSpec.new Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Base64.encodeBase64String
+1087;decryption;Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1088;decrypt by key;Base64.decodeBase64 SecureRandom.new DESKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1089;encrypts or decrypts an unencoded raw byte array using aes, returning the result as an unencoded byte array.;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.init Cipher.doFinal
+1090;generate key;KeyPairGenerator.getInstance SecureRandom.new String.getBytes SecureRandom.setSeed KeyPairGenerator.initialize KeyPairGenerator.genKeyPair KeyPair.getPublic KeyPair.getPrivate
+1091;encrypt or decrypt unencoded raw byte array using aes;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new IvParameterSpec.new Cipher.getInstance Cipher.init Cipher.doFinal
+1092;read public key, x509 format;CertificateFactory.getInstance CertificateFactory.generateCertificate Certificate.getPublicKey
+1093;generate digital signature on message with private key;String.getBytes Base64.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Signature.getInstance Signature.initSign Signature.update Signature.sign Base64.encode
+1094;decrypt data;Cipher.DECRYPT_MODE Cipher.init InputStream.available CipherOutputStream.new byte.new InputStream.read CipherOutputStream.write InputStream.close CipherOutputStream.flush
+1095;encryption;MessageDigest.getInstance String.getBytes MessageDigest.update MessageDigest.digest
+1096;decrypt;SecureRandom.new DESKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1097;private key decryption;String.getBytes Base64.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init ByteArrayOutputStream.new Cipher.doFinal ByteArrayOutputStream.toByteArray ByteArrayOutputStream.close
+1098;public key encryption;String.getBytes Base64.getEncoded X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.getPublic KeyFactory.getAlgorithm Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init ByteArrayOutputStream.new Cipher.doFinal ByteArrayOutputStream.toByteArray ByteArrayOutputStream.close
+1099;the rsa algorithm uses the private key to generate a digital signature on the data;PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Signature.getInstance Siganture.initSign String.getBytes Signature.update Signature.sign
+1100;cbc mode decryption;Base64Encoder.new SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE String.getBytes IvParameterSpec.new Cipher.init Cipher.doFinal Base64Encoder.encode
+1101;public key encryption, private key decryption -- decryption;Base64.decodeBase64 PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal Base64.decodeBase64String
+1102;public method for computing file information digests;MessageDigest.getInstance FileInputStream.new FileInputStream.getChannel ByteBuffer.allocate FileChannel.read ByteBuffer.flip MessageDigest.update ByteBuffer.clear MessageDigest.digest
+1103;aes decrypt;Cipher.getInstance SecretKeySpec.new Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1104;initialize party b's key;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPublic KeyPair.getPrivate
+1105;generate a random vector, the default size is cipher.getblocksize(), 16 bytes;byte.new SecureRandom.new SecureRandom.nextBytes
+1106;create pkcs10;Signature.getInstance PKCS10.new Singature.initSign X500Name.new PKCS10.encodeAndSign
+1107;generates a secretkey from a byte[];SecretKeySpec.new
+1108;iv encrypt or decrypt unencoded raw byte array using aes;SecretKeySpec.new IvParameterSpec.new Cipher.getInstance Cipher.init Cipher.doFinal
+1109;decrypt data without v;Security.addProvider Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1110;decryption process of private key;Base64Utils.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal String.new
+1111;encrypt the password by using the md5 algorithm;MessageDigest.getInstance String.getBytes MessageDigest.update MessageDigest.digest BigInteger.new BigInteger.toString
+1112;two-way encryption using keygenerator, aes;KeyGenerator.getInstance String.getBytes SecureRandom.new KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1113;private key encryption, public key decryption -- decryption;Base64.decodeBase64 X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Base64.decodeBase64String
+1114;verify signature;Signature.getInstance Signature.initVerify Signature.update Signature.verify
+1115;generate an aes key with optional lengths of 128, 192, 256 bits.;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded
+1116;decrypt the encrypted data with an input: data, key, cipher and algorithm values;String.getBytes SecretKeySpec.new Cipher.DECRYPT_MODE Cipher.getInstance Cipher.init Cipher.doFinal
+1117;decrypt;KeyGenerator.getInstance SecureRandom.getInstance SecureRandom.setSeed String.getBytes KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init String.getBytes BASE64Decoder.new.decodeBuffer Cipher.doFinal String.new 
+1118;generate an hmac-sha1 key and return a byte array with a length of 160 bits (20 bytes).;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded
+1119;provides a salt, which must be unique but is not private.;JCAUtil.getSecureRandom byte.new SecureRandom.nextBytes
+1120;descbc encryption;String.getBytes DESKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret IvParameterSpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Base64.encodeBase64String
+1121;public key encryption, private key decryption -- encryption;Base64.decodeBase64 X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Base64.encodeBase64String
+1122;public method for encrypting and decrypting files;Cipher.ENCRYPT_MODE Cipher.DECRYPT_MODE FileInputStream.new.getChannel FileOutputStream.new.getChannel Cipher.getInstance Cipher.init ByteBuffer.allocate ByteBuffer.allocate FileInputStream.read ByteBuffer.flip ByteBuffer.clear Cipher.doFinal ByteBuffer.flip FileOutputStream.write ByteBuffer.clear
+1123;give a cipheroutputstream to encrypt data,;CipherOutputStream.new
+1124;private key encryption;String.getBytes Base64.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate KeyFactory.getAlgorithm Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init ByteArrayOutputStream.new Cipher.doFinal ByteArrayOutputStream.toByteArray ByteArrayOutputStream.close
+1125;rsa validate signature;KeyFactory.getInstance Base64Utils.decode X509EncodedKeySpec.new KeyFactor.generatePublic Signature.getInstance Signature.initVerify String.getBytes Signature.update Base64Utils.decode Signature.verify
+1126;public key encryption, the public key used is stored on the system disk;Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1127;the rsa algorithm uses the private key to generate a digital signature on the data;Base64.getDecoder.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Signature.getInstance Signature.initSign String.getBytes Signature.update Signature.sign Base64.getEncoder.encodeToString
+1128;use keygenerator two-way encryption, des;KeyGenerator.getInstance String.getBytes SecureRandom.new KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1129;data summary;MessageDigest.getInstance MessageDigest.update MessageDigest.digest
+1130;decryption;Cipher.getInstance SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1131;encryption;SecretKeyFactory.getInstance DESedeKeySpec.new SecretKeyFactory.generateSecret Cipher.getInstance IvParameterSpec.new Cipher.ENCRPYT_MODE Cipher.init Cipher.doFinal
+1132;aes encryption;Cipher.getInstance String.getBytes SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Base64Encoder.new Base64Encoder.encode URLEncoder.encode
+1133;get private key;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPrivate Key.getEncoded Base64.encode String.new
+1134;obtain encrypted and decrypted data through public key;String.getBytes Base64.decodeBase64 X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic KeyFactory.getAlgorithm Cipher.getInstance Cipher.init Cipher.doFinal
+1135;encrypts private key to pkcs8 format;RSAPrivateKey.getEncoded PrivateKeyInfo.getInstance PKCS8Generator.new PKCS8Generator.generate PemObject.getContent Base64.getEncoder Base64.encodeToString
+1136;"create an encrypted data with an input; data, key, cipher and algorithm values";String.getBytes SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.getInstance Cipher.init Cipher.doFinal
+1137;decrypt data;CipherType.getDigest Digest.getDigestSize byte.new String.toUTF8Byte HMac.new byte.length HMac.update HMac.doFinal Digest.reset Cipher.getInstance CipherType.getAlgorithm SecretKeySpec.new IvParameterSpec.new Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1138;encrypt with sha1 method (password can be set);KeyGenerator.getInstance KeyGenerator.generateKey String.getBytes SecretKeySpec.new Mac.getInstance Mac.init Mac.doFinal Base64Util.getInstance.encode
+1139;generate key pair (public and private key);KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPublic KeyPair.getPrivate
+1140;encrypt the data;byte.new IvParameterSpec.new Cipher.getInstance Cipher.ENCRYPT_MODE SecretKeySpec.new Cipher.init Cipher.doFinal
+1141;128 bit key encryption;String.getBytes SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.getBytes Cipher.doFinal
+1142;give a cipherinputstream to decrypt data;CipherInputStream.new
+1143;encrypt;SecureRandom.new DESKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1144;decrypt data;SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1145;generate aes key with optional length of 128, 192, 256 bits;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded
+1146;rsa algorithm uses public key to verify digital signature;X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Signature.getInstance Siganture.initVerify String.getBytes Signature.update Signature.verify
+1147;decrypt text file;FileInputStream.new FileOutputStream.new String.getBytes SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init CipherOutputStream.new FileInputStream.read CipherOutputStream.write CipherOutputStream.flush CipherOutputStream.close FileInputStream.close
+1148;public key encryption;Base64.getDecoder Base64.decode KeyFactory.getInstance X509EncodedKeySpec.new KeyFactory.generatePublic KeyFactory.getInstance Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.getOutputSize Cipher.doFinal
+1149;verify digital signature;Signature.getInstance Signature.initVerify Signature.update Signature.verify
+1150;sign the message using hmac-sha1, returning a byte array with a length of 20 bytes.;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Mac.getInstance Mac.init Mac.doFinal
+1151;generate digital signature on message with private key;Signature.getInstance Signature.initSign Signature.update Signature.sign
+1152;rsa algorithm uses public key to verify digital signature;Signature.getInstance Signature.initVerify String.getBytes Signature.update Signature.verify
+1153;obtain encrypted and decrypted data through private key;String.getBytes Base64.decodeBase64 PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate KeyFactory.getAlgorithm Cipher.getInstance Cipher.init Cipher.doFinal
+1154;rsa algorithm private key to decrypt data;Base64.getDecoder.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate KeyFactory.getAlgorithm Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Base64.getEncoder.encodeToString
+1155;initialize the rsa algorithm key pair;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPublic Key.getEncoded Base64.getEncoder.encodeToString KeyPair.getPrivate Key.getEncoded Base64.getEncoder.encodeToString
+1156;iterative digest algorithm;DigestAlgorithm.getAlgorithm MessageDigest.getInstance MessageDigest.update MessageDigest.digest MessageDigest.reset MessageDigest.digest
+1157;this method can decrypt the encrypted string (ciphertext), the key is the key when it was originally encrypted, and the returned value is the decrypted string;Cipher.getInstance String.getBytes SecretKeySpec.new Cipher.ENCRYPT_MODE IvParameterSpec.new Cipher.init String.new Cipher.doFinal DatatypeConverter.parseBase64Binary
+1158;symmetric decryption;Cipher.getInstance IvParameterSpec.new Cipher.DECRYPT_MODE Cipher.init Cipher.update Cipher.doFinal
+1159;self-signed certificate (root certificate);X509CertInfo.ALGORITHM_ID X509CertInfo.get X509CertInfo.ISSUER X509CertInfo.SUBJECT X509CertInfo.get X509CertImpl.new CertificateAlgorithmId.ALGORITHM CertificateAlgorithmId.get CertificateAlgorithmId.getName X509CertImpl.sign
+1160;3desecb encryption;String.getBytes DESedeKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Base64.encodeBase64String
+1161;rsa algorithm private key to encrypt data;Base64.getDecoder Base64.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate KeyFactory.getAlgorithm Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1162;use hmac-sha1 for message signing, return byte array, length 20 bytes;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Mac.getInstance Mac.init Mac.doFinal
+1163;sign;KeyStore.getInstance KeyStore.load KeyStore.aliases KeyStore.getKey Signature.getInstance Signature.initSign Signature.update Signature.sign
+1164;get ssl context;KeyManagerFactory.getInstance KeyManagerFactory.init SSLContext.getInstance SSLContext.init KeyManagerFactory.getKeyManagers
+1165;parse private key from pem format;PEMParser.new PEMParser.readObject JcaPEMKeyConverter.new JcaPEMKeyConverter.setProvider PEMKeyPair.getPrivateKeyInfo JcaPEMKeyConverter.getPrivateKey
+1166;calculate rfc2104 hmac of sha1.;Digest.getDigestSize byte.new String.toUTF8Byte HMac.new byte.length HMac.update HMac.doFinal Digest.reset
+1167;decrypt;SecureRandom.new String.getBytes DESKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1168;initialize party a's key;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPublic KeyPair.getPrivate
+1169;perform aes algorithm (encryption and decryption), input and output data format is byte stream;Cipher.ENCRYPT_MODE Cipher.DECRYPT_MODE BouncyCastleProvider.new Security.addProvider Cipher.getInstance SecretKeySpec.new Cipher.init Cipher.doFinal
+1170;rsa algorithm public key decrypt data;Base64.getDecoder.decode X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic KeyFactory.getAlgorithm Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init String.new
+1171;decrypt;SecretKeyFactory.getInstance DESedeKeySpec.new SecretKeyFactory.generateSecret Cipher.getInstance IvParameterSpec.new Cipher.DECRPYT_MODE Cipher.init Cipher.doFinal
+1172;private key decryption;KeyFactory.getInstance Base64.decodeBase64 PKCS8EncodedKeySpec.new KeyFactory.generatePrivate Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Base64.decodeBase64 RSAPrivateKey.getModulus.bitLength ByteArrayOutputStream.new Cipher.doFinal ByteArrayOutputStream.write ByteArrayOutputStream.toByteArray IOUtils.closeQuietly
+1173;3des algorithm;SecretKeyFactory.getInstance String.getBytes DESedeKeySpec.new SecretKeyFactory.generateSecret IvParameterSpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.DECRYPT_MODE Cipher.init
+1174;aes encrypted name;Cipher.getInstance SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1175;encryption and decryption public methods;Cipher.ENCRYPT_MODE Cipher.DECRYPT_MODE Cipher.getInstance Cipher.init Cipher.doFinal
+1176;public key encryption;KeyFactory.getInstance Base64.decodeBase64 X509EncodedKeySpec.new KeyFactory.generatePublic Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.getBytes RSAPublicKey.getmodulus.bitLength Base64.encodeBase64URLSafeString
+1177;parse private key from encrypted pem format;StringReader.new PEMParser.new PEMParser.readObject PKCS8EncryptedPrivateKeyInfo.decryptPrivateKeyInfo JcaPEMKeyConverter.new JcaPEMKeyConverter.setProvider JcaPEMKeyConverter.getPrivateKey
+1178;encryption;SecureRandom.new String.getBytes DESedeKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Base64.getEncoder.encode String.new
+1179;this method can encrypt the string (ciphertext), the key is the key when it was originally encrypted, and the returned value is the encrypted string;Cipher.getInstance String.getBytes SecretKeySpec.new IvParameterSpec.new Cipher.ENCRYPT_MODE Cipher.init DatatypeConverter.parseBase64Binary Cipher.doFinal String.new
+1180;how to generate a symmetric key;KeyGenerator.getInstance KeyGenerator.generateKey ObjectAccessUtil.writeToFile
+1181;cbc mode encryption;Base64Encoder.new SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE String.getBytes IvParameterSpec.new Cipher.init Cipher.doFinal Base64Encoder.encode
+1182;key generation;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPrivate KeyPair.getPublic RSAKeyPair.new
+1183;md5 encrypted byte array, returns the encrypted byte array;MessageDigest.getInstance MessageDigest.digest
+1184;get the hash value of the data;MessageDigest.getInstance MessageDigest.update MessageDigest.digest
+1185;generate hmac-sha1 key, return byte array, 160 bits long (20 bytes).;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded
+1186;pbe specification;PBEParameterSpec.new
+1187;rsa algorithm uses public key to verify digital signature;Base64.getDecoder.decode X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Signature.getInstance Signature.initVerify String.getBytes Signature.update Base64.getDecoder.decode Signature.verify
+1188;encrypt or decrypt an unencoded raw byte array using aes, returning the result as an unencoded byte array;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new IvParameterSpec.new Cipher.getInstance Cipher.init Cipher.doFinal
+1189;methods of generating asymmetric keys;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPrivate KeyPair.getPublic ObjectAccessUtil.writeToFile ObjectAccessUtil.writeToFile
+1190;sign;PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Siganture.getInstance Signature.initSign Signature.update Siganture.sign
+1191;parse public key from pkcs1 format;Base64.getDecoder Base64.decode RSAPublicKey.getInstance RSAPublicKey.getPublicExponent RSAPublicKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic
+1192;symmetric encryption;Cipher.getInstance IvParameterSpec.new Cipher.ENCRYPT_MODE Cipher.init Cipher.update Cipher.doFinal
+1193;use hmac-sha1 for message signing;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Mac.getInstance Mac.init Mac.doFinal
+1194;encrypt data;Digest.getDigestSize byte.new String.toUTF8Byte HMac.new byte.length HMac.update HMac.doFinal Digest.reset Cipher.getInstance SecretKeySpec.new IvParameterSpec.new Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1195;symmetric encryption/decryption of files;Cipher.ENCRYPT_MODE Cipher.DECRYPT_MODE Cipher.getInstance Cipher.init FileInputStream.new.getChannel FileInputStream.new.getChannel ByteBuffer.allocate ByteBuffer.allocate FileChannel.read ByteBuffer.flip ByteBuffer.clear Cipher.doFinal ByteBuffer.flip FileOutputStream.write ByteBuffer.clear FileInputStream.close FileInputStream.close
+1196;aes encryption/decryption public methods;String.getBytes IvParameterSpec.new String.getBytes SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal Base64. encodeBase64String Cipher.DECRYPT_MODE Cipher.init Base64. decodeBase64 Cipher.doFinal String.new
+1197;aes algorithm;Cipher.getInstance String.getBytes SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.DECRYPT_MODE Cipher.init
+1198;the rsa algorithm uses the private key to generate a digital signature for the data;Signature.getInstance Signature.initSign String.getBytes Signature.update Signature.sign Base64.encodeBase64String
+1199;signature verification;Signature.getInstance CertificateFactory.getInstance CertificateFactory.generateCertificate Certificate.getPublicKey Signature.initVerify Signature.update String.getBytes Base64.decodeBase64 Signature.verify
+1200;parse private key from encrypted format;PKCS8EncryptedPrivateKeyInfo.new PKCS8EncryptedPrivateKeyInfo.decryptPrivateKeyInfo JcaPEMKeyConverter.new JcaPEMKeyConverter.setProvider JcaPEMKeyConverter.getPrivateKey
+1201;public and private keys of both parties generate (negotiate) a symmetric key;KeyAgreement.getInstance KeyAgreement.init KeyAgreement.doPhase KeyAgreement.generateSecret
+1202;sign the message using hmac-sha1;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Mac.getInstance Mac.init Mac.doFinal
+1203;perform ansi98 decryption;String.getBytes SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1204;generate hmac-sha1 key;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded
+1205;private key encryption;PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Cipher.getInstance Cipher.init ByteArrayOutputStream.write Cipher.doFinal ByteArrayOutputStream.write ByteArrayOutputStream.close
+1206;private key encryption, public key decryption -- encryption;Base64.decodeBase64 PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Base64.encodeBase64String
+1207;methods of generating asymmetric keys;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPrivate KeyPair.getPublic FileOutputStream.new ObjectOutputStream.new ObjectOutputStream.writeObject FileOutputStream.new ObjectOutputStream.new ObjectOutputStream.writeObject
+1208;perform tripledes encryption;Cipher.getInstance String.getBytes SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1209;encrypts or decrypts an unencoded raw byte array using aes;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.init Cipher.doFinal
+1210;generate hmac-sha1 key;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded
+1211;verify digital signature;Base64.encode String.new X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Signature.getInstance Signature.initVerify Signature.update String.getBytes Base64.decode Signature.verify
+1212;private key decryption;PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Cipher.getInstance Cipher.init ByteArrayOutputStream.write Cipher.doFinal ByteArrayOutputStream.write ByteArrayOutputStream.close
+1213;encrypt with md5 method (password can be set);KeyGenerator.getInstance KeyGenerator.generateKey String.getBytes SecretKeySpec.new Mac.getInstance Mac.init Mac.doFinal Base64Util.getInstance.encode
+;;

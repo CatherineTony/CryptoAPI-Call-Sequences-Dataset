@@ -1,0 +1,208 @@
+﻿Indentifier;Ground Truth API sequence
+1001;byte.new SecureRandom.new SecureRandom.nextBytes Cipher.ENCRYPT_MODE Cipher.DECRYPT_MODE PBEParameterSpec.new PBEKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.init Cipher.doFinal PBEKeySpec.clearPassword
+1002;StringReader.new PEMParser.new SubjectPublicKeyInfo.new PEMParser.readObject PublicKeyFactory.createKey RSAKeyParameter.new RSAKeyParamter.getModulus RSAKeyParameter.getExponent RSAPublicKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic
+1003;Security.addProvider Base64Utils.decodeFromString PKCS8EncodedKeySpec.new String.toUTF8Byte Cipher.DECRYPT_MODE KeyFactory.getInstance KeyFactory.generatePrivate Cipher.getInstance Cipher.init Cipher.doFinal
+1004;SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal Base64.Encoder.getEncoder
+1005;KeyFactory.getInstance X509EncodedKeySpec.new KeyFactory.generatePublic
+1006;SecretKey.getEncoded Base64Utils.decode KeyFactory.getInstance X509EncodedKeySpec.new KeyFactory.generatePublic
+1007;Base64Utils.decode X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Signature.getInstance Signature.initVerify Signature.update Base64Utils.decode Siganture.verify
+1008;Security.addProvider Base64Utils.decode KeyFactory.getInstance X509EncodedKeySpec.new KeyFactory.generatePublic Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1009;KeyStore.getInstance KeyStore.load KeyStore.aliases KeyStore.getKey
+1010;Base64.getDecoder.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.DECRYPT_MODE Cipher.init FileOutputStream.new FileOutputStream.write FileOutputStream.close Cipher.doFinal
+1011;KeyFactory.getInstance Base64.decodeBase64 X509EncodedKeySpec.new KeyFactory.generatePublic Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init String.getBytes RSAPublicKey.getModulus.bitLength ByteArrayOutputStream.new Cipher.doFinal ByteArrayOutputStream.write ByteArrayOutputStream.toByteArray IOUtils.closeQuietly
+1012;Cipher.getInstance String.toUTF8Byte SecretKey.getEncoded SecretKeySpec.new Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1013;Security.addProvider KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPrivate KeyPair.getPublic Key.getEncoded Base64.encode String.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init ByteArrayOutputStream.new Cipher.doFinal Base64. encodeBase64URLSafeString
+1014;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded Cipher.ENCRYPT_MODE String.toUTF8Byte Base64.getDecoder.decode SecureRandom.new Cipher.getInstance SecureRandom.nextBytes SecretKeySpec.new IvParameterSpec.new Cipher.init Cipher.doFinal Base64.getEncoder.encode String.new
+1015;byte.new SecureRandom.new SecureRandom.nextBytes Cipher.ENCRYPT_MODE Cipher.DECRYPT_MODE PBEParameterSpec.new PBEKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.init FileInputStream.new BufferedInputStream.new FileOutputStream.new BufferedOutputStream.new byte.new BufferedInputStream.read Cipher.update BufferedOutputStream.write Cipher.doFinal PBEKeySpec.clearPassword
+1016;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPublic Key.getEncoded Base64.encodeBase64URLSafeString KeyPair.getPrivate Key.getEncoded Base64.encodeBase64URLSafeString
+1017;Security.addProvider Base64.getDecoder.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate KeyFactory.getAlgorithm Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Base64.getEncoder.encodeToString Cipher.doFinal
+1018;Security.addProvider KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.init Cipher.doFinal
+1019;SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal Base64.Encoder.getEncoder
+1020;Security.addProvider KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.init Cipher.doFinal
+1021;KeyFactory.getInstance Base64.decodeBase64 X509EncodedKeySpec.new KeyFactory.generatePublic Signature.getInstance Signature.initVerify String.getBytes Signature.update Signature.verify
+1022;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded
+1023;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPublic Key.getEncoded Base64.encode String.new
+1024;SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded Cipher.getInstance SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1025;Security.addProvider Base64Utils.decode KeyFactory.getInstance X509EncodedKeySpec.new KeyFactory.generatePublic Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Base64Utils.decode Cipher.doFinal String.new
+1026;byte.new byte.new byte.new KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecureRandom.getInstance SecureRandom.nextBytes IvParameterSpec.new SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal IvParameterSpec.new Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal IvParameterSpec.new Cipher.DECRYPT_MODE Cipher.init Cipher.update Cipher.doFinal
+1027;String.getBytes DESedeKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Base64.encodeBase64String
+1028;byte.new SecureRandom.new SecureRandom.nextBytes
+1029;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPublic KeyPair.getPrivate RSAPublicKey.getEncoded Base64.encodeBase64String RSAPrivateKey.getEncoded Base64.encodeBase64String
+1030;byte.new SecureRandom.new SecureRandom.nextBytes SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance IvParameterSpec.new Cipher.DECRYPT_MODE Cipher.doFinal 
+1031;KeyFactory.getInstance PKCS8EncodedKeySpec.new KeyFactory.generatePrivate
+1032;Base64.getDecoder.decode X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic
+1033;Security.addProvider KeyGenerator.getInstance SecureRandom.getInstance SecureRandom.setSeed String.getBytes KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.getBytes Cipher.doFinal BASE64Encoder.new.encode
+1034;byte.new byte.new byte.new KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecureRandom.getInstance SecureRandom.nextBytes IvParameterSpec.new SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal IvParameterSpec.new Cipher.ENCRYPT_MODE Cipher.init Cipher.getOutputSize Cipher.update Cipher.doFinal
+1036;SecureRandom.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1037;Security.addProvider SecureRandom.new String.toUTF8Byte SecretKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1038;String.getBytes SecureRandom.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1039;SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init InputStream.available CipherOutputStream.new byte.new InputStream.read CipherOutputStream.write InputStream.close CipherOutputStream.flush CipherOutputStream.close Cipher.doFinal
+1040;KeyFactory.getInstance Base64.decodeBase64 PKCS8EncodedKeySpec.new KeyFactory.generatePrivate Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.getBytes RSAPrivateKey.getModulus.bitLength ByteArrayOutputStream.new Cipher.doFinal ByteArrayOutputStream.write ByteArrayOutputStream.toByteArray IOUtils.closeQuietly
+1041;Security.addProvider String.toUTF8Byte SecureRandom.new SecureRandom.nextBytes SecretKeyFactory.getInstance Cipher.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded SecretKeySpec.new Cipher.init Cipher.ENCRYPT_MODE String.getBytes Cipher.doFinal
+1042;byte.new SecureRandom.getInstance SecureRandom.nextBytes SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded IvParameterSpec.new Cipher.getInstance Cipher.DECRYPT_MODE SecretKeySpec.new Cipher.init Cipher.doFinal
+1043;SecureRandom.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1044;SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded String.getBytes SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE URLDecoder.decode Base64.Decoder.new Base64.Decoder.getDecoder Cipher.doFinal String.new
+1045;Security.addProvider SecretKeyFactory.getInstance String.toUT8byte SecureRandom.nextBytes SecretKeyFactory.generateSecret SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1046;KeyFactory.getInstance X509EncodedKeySpec.new KeyFactory.generatePublic
+1047;byte.new SecureRandom.new SecureRandom.nextBytes SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance IvParameterSpec.new Cipher.ENCRYPT_MODE Cipher.doFinal 
+1048;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPrivate KeyPair.getPublic Key.getEncoded Base64.encode String.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init ByteArrayOutputStream.new Cipher.doFinal RSAPrivateKey.getModulus.bitLength Base64. encodeBase64URLSafeString
+1049;KeyGenerator.getInstance KeyGenerator.generateKey FileOutputStream.new ObjectOutputStream.new ObjectOutputStream.writeObject
+1050;Cipher.getInstance String.toUTF8Byte SecretKey.getEncoded SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1051;String.getBytes MessageDigest.getInstance MessageDigest.update MessageDigest.digest String.new
+1052;Base64.getDecoder.decode X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.DECRYPT_MODE Cipher.init FileOutputStream.new FileOutputStream.write FileOutputStream.close Cipher.doFinal
+1053;KeyPairGenerator.getInstance SecureRandom.new KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPrivate KeyPair.getPublic RSAPublicKey.getEncoded Base64.encode RSAPrivateKey.getEncoded Base64.encode
+1054;byte.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded SecureRandom.getInstance SecureRandom.nextBytes Cipher.getInstance SecretKeySpec.new IvParameterSpec.new Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1055;KeyFactory.getInstance Base64.decodeBase64 PKCS8EncodedKeySpec.new KeyFactory.generatePrivate
+1056;Security.addProvider Base64.getDecoder.decode X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic KeyFactory.getAlgorithm Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Base64.getEncoder.encodeToString Cipher.doFinal
+1057;SecretKey.getEncoded Base64Utils.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Signature.getInstance Signature.initSign String.toUTF8Byte Signature.update Signature.sign Base64Utils.encode
+1058;Base64.getDecoder.decode KeyFactory.getInstance PKCS8EncodedKeySpec.new KeyFactory.generatePrivate
+1060;Security.addProvider Base64.getDecoder Base64.decode KeyFactory.getInstance PKCS8EncodedKeySpec.new KeyFactory.generatePrivate KeyFactory.getInstance Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.getOutputSize Cipher.doFinal
+1061;KeyFactory.getInstance Base64.decodeBase64 X509EncodedKeySpec.new KeyFactory.generatePublic
+1062;Security.addProvider KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKey.getEncoded SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.DECRYPT_MODE Cipher.getInstance Cipher.init Cipher.doFinal
+1063;SecureRandom.new String.toUTF8Byte DESedeKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.DECRYPT_MODE Cipher.init Strin.toUTF8Byte Cipher.doFinal Base64.getDecoder.decode String.new
+1064;String.toUTF8Byte byte.new SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1065;Cipher.getInstance String.toUTF8Byte SecretKey.getEncoded SecretKeySpec.new Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1066;Signature.getInstance Signature.initSign Signature.update Signature.sign
+1067;byte.new KeyPairGenerator.getInstance SecureRandom.new KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPrivate.getEncoded KeyPair.getPublic.getEncoded
+1068;Security.addProvider SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded FileInputStream.new FileOutputStream.new String.toUTF8Byte SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init CipherOutputStream.new FileInputStream.read CipherOutputStream.write CipherOutputStream.flush CipherOutputStream.close FileInputStream.close Cipher.doFinal
+1069;KeyFactory.getInstance PKCS8EncodedKeySpec.new KeyFactory.generatePrivate
+1070;X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Cipher.getInstance Cipher.init ByteArrayOutputStream.new Cipher.doFinal ByteArrayOutputStream.write ByteArrayOutputStream.close
+1071;Security.addProvider Base64Utils.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Base64Utils.encode
+1072;SecretKey.getEncoded String.getBytes SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Base64.Encoder.new Base64.Encoder.getEncoder
+1073;String.toUTF8Byte SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1074;X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Cipher.getInstance Cipher.init ByteArrayOutputStream.new Cipher.doFinal ByteArrayOutputStream.write ByteArrayOutputStream.close
+1075;SecretKey.getEncoded String.getBytes SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE URLDecoder.decode Base64.Decoder.getDecoder Cipher.doFinal String.new
+1076;Security.addProvider KeyGenerator.getInstance SecureRandom.getInstance String.getBytes SecureRandom.setSeed KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.init Cipher.doFinal
+1077;SecretKey.getEncoded Cipher.getInstance String.getBytes SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Base64.Encoder.getEncoder
+1078;KeyFactory.getInstance KeyFactory.generatePrivate RSAPrivateKeySpec.new
+1079;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPublic KeyPair.getPrivate
+1080;SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded SecureRandom.new SecureRandom.nextBytes Cipher.getInstance SecretKeySpec.new IvParameterSpec.new Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1081;Security.addProvider Base64Utils.decodeFromString X509EncodedKeySpec.new String.toUTF8Byte Cipher.ENCRYPT_MODE KeyFactory.getInstance KeyFactory.generatePublic Cipher.getInstance Cipher.init Cipher.doFinal
+1082;KeyStore.getInstance KeyStore.load
+1083;String.getBytes MessageDigest.getInstance MessageDigest.update MessageDigest.digest NumberUtil.byteToHex
+1084;X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Siganture.getInstance Signature.initVerify Signature.update Siganture.verify
+1085;Security.addProvider SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1086;SecureRandom.new String.getBytes SecureRandom.nextBytes SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded SecretKeySpec.new IvParameterSpec.new Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Base64.encodeBase64String
+1087;Security.addProvider SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1088;Base64.decodeBase64 SecureRandom.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1089;Security.addProvider KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.init Cipher.doFinal
+1090;KeyPairGenerator.getInstance SecureRandom.new String.toUTF8Byte SecureRandom.setSeed KeyPairGenerator.initialize KeyPairGenerator.genKeyPair KeyPair.getPublic KeyPair.getPrivate
+1091;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecureRandom.new SecureRandom.nextBytes SecretKeySpec.new IvParameterSpec.new Cipher.getInstance Cipher.init Cipher.doFinal
+1092;CertificateFactory.getInstance CertificateFactory.generateCertificate Certificate.getPublicKey
+1093;String.getBytes Base64.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Signature.getInstance Signature.initSign Signature.update Signature.sign Base64.encode
+1094;SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded SecretKeySpec.new Cipher.DECRYPT_MODE Cipher.init InputStream.available CipherOutputStream.new byte.new InputStream.read CipherOutputStream.write InputStream.close CipherOutputStream.flush CipherOutputStream.close Cipher.doFinal
+1095;MessageDigest.getInstance String.getBytes MessageDigest.update MessageDigest.digest
+1096;Security.addProvider SecureRandom.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1097;Security.addProvider String.getBytes Base64.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init ByteArrayOutputStream.new Cipher.doFinal ByteArrayOutputStream.toByteArray ByteArrayOutputStream.close
+1098;String.getBytes Base64.getEncoded X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic KeyFactory.getAlgorithm Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init ByteArrayOutputStream.new Cipher.doFinal ByteArrayOutputStream.toByteArray ByteArrayOutputStream.close
+1099;PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Signature.getInstance Siganture.initSign String.getBytes Signature.update Signature.sign
+1100;byte.new SecureRandom.new SecureRandom.nextBytes SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE String.toUTF8Byte IvParameterSpec.new Cipher.init Cipher.doFinal Base64.Encoder.getEncoder
+1101;Security.addProvider Base64.decodeBase64 PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal Base64.decodeBase64String
+1102;MessageDigest.getInstance FileInputStream.new FileInputStream.getChannel ByteBuffer.allocate FileChannel.read ByteBuffer.flip MessageDigest.update ByteBuffer.clear MessageDigest.digest
+1103;SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded Cipher.getInstance SecretKeySpec.new Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1104;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPublic KeyPair.getPrivate
+1105;byte.new SecureRandom.new SecureRandom.nextBytes
+1106;Signature.getInstance PKCS10.new Singature.initSign X500Name.new PKCS10.encodeAndSign
+1107;SecretKey.getEncoded SecretKeySpec.new
+1108;SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded SecureRandom.new SecureRandom.nextBytes SecretKeySpec.new IvParameterSpec.new Cipher.getInstance Cipher.init Cipher.doFinal
+1109;Security.addProvider SecretKeyFactory.getInstance String.getBytes SecureRandom.nextBytes SecretKeyFactory.generateSecret SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init String.getBytes Cipher.doFinal
+1110;Security.addProvider Base64Utils.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal String.new
+1111;MessageDigest.getInstance String.toUTF8Byte MessageDigest.update MessageDigest.digest BigInteger.new BigInteger.toString
+1112;Security.addProvider KeyGenerator.getInstance String.toUTF8Byte SecureRandom.new KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.toUTF8Byte Cipher.doFinal Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1113;Security.addProvider Base64.decodeBase64 X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init String.toUTF8Byte Cipher.doFinal Base64.decodeBase64String
+1114;Signature.getInstance Signature.initVerify Signature.update Signature.verify
+1115;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded
+1116;SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded String.toUTF8Byte SecretKeySpec.new Cipher.DECRYPT_MODE Cipher.getInstance Cipher.init Cipher.doFinal
+1117;Security.addProvider KeyGenerator.getInstance SecureRandom.getInstance SecureRandom.setSeed String.getBytes KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init String.getBytes BASE64Decoder.new.decodeBuffer Cipher.doFinal String.new 
+1118;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded
+1119;JCAUtil.getSecureRandom byte.new SecureRandom.nextBytes
+1120;SecureRandom.new String.getBytes SecureRandom.nextBytes SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded SecretKeySpec.new IvParameterSpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Base64.encodeBase64String
+1121;Security.addProvider Base64.decodeBase64 X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Base64.encodeBase64String
+1122;Security.addProvider KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.DECRYPT_MODE FileInputStream.new.getChannel FileOutputStream.ew.getChannel Cipher.getInstance Cipher.init ByteBuffer.allocate ByteBuffer.allocate FileInputStream.read ByteBuffer.flip ByteBuffer.clear Cipher.doFinal ByteBuffer.flip FileOutputStream.write ByteBuffer.clear
+1123;CipherOutputStream.new
+1124;String.getBytes Base64.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate KeyFactory.getAlgorithm Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init ByteArrayOutputStream.new Cipher.doFinal ByteArrayOutputStream.toByteArray ByteArrayOutputStream.close
+1125;SecretKey.getEncoded KeyFactory.getInstance Base64Utils.decode X509EncodedKeySpec.new KeyFactor.generatePublic Signature.getInstance Signature.initVerify String.toUTF8Byte Signature.update Base64Utils.decode Signature.verify
+1126;Security.addProvider SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1127;Base64.getDecoder.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Signature.getInstance Signature.initSign String.getBytes Signature.update Signature.sign Base64.getEncoder.encodeToString
+1128;KeyGenerator.getInstance String.toUTF8Byte SecureRandom.new KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.toUTF8Byte Cipher.doFinal Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1129;MessageDigest.getInstance MessageDigest.update MessageDigest.digest
+1130;SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded Cipher.getInstance SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1131;SecureRandom.new SecureRandom.nextBytes SecretKeyFactory.getInstance DESedeKeySpec.new SecretKeyFactory.generateSecret SecretKey.getEncode Cipher.getInstance IvParameterSpec.new Cipher.ENCRPYT_MODE Cipher.init Cipher.doFinal
+1132;SecretKey.getEncoded Cipher.getInstance String.getBytes SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.init String.getBytes Cipher.doFinal Base64.Encoder.getEncoder URLEncoder.encode
+1133;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPrivate Key.getEncoded Base64.encode String.new
+1134;Security.addProvider String.getBytes Base64.decodeBase64 X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic KeyFactory.getAlgorithm Cipher.getInstance Cipher.init Cipher.doFinal
+1136;SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded String.toUTF8Byte SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.getInstance Cipher.init Cipher.doFinal
+1137;SHA256Digest.new Digest.getDigestSize byte.new SecureRandom.new SecureRandom.nextBytes KeyParameter.new String.toUTF8Byte HMac.new byte.length HMac.init HMac.update HMac.doFinal Digest.reset Cipher.getInstance SecretKeySpec.new SecureRandom.new SecureRandom.nextBytes IvParameterSpec.new Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1138;KeyGenerator.getInstance KeyGenerator.generateKey String.toUTF8Byte SecretKey.getEncoded SecretKeySpec.new Mac.getInstance Mac.init Mac.doFinal Base64Util.getInstance.encode
+1139;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPublic KeyPair.getPrivate
+1140;byte.new SecureRandom.new SecureRandom.nextBytes IvParameterSpec.new Cipher.getInstance Cipher.ENCRYPT_MODE SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded SecretKeySpec.new Cipher.init Cipher.doFinal
+1141;Security.addProvider String.toUTF8Byte SecretKeyFactory.getInstance String.getBytes SecureRandom.nextBytes SecretKeyFactory.generateSecret SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.toUTF8Byte Cipher.doFinal
+1142;CipherInputStream.new
+1143;Security.addProvider SecureRandom.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1144;SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1145;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded
+1146;X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Signature.getInstance Siganture.initVerify String.getBytes Signature.update Signature.verify
+1147;Security.addProvider SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded FileInputStream.new FileOutputStream.new String.toUTF8Byte SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init CipherOutputStream.new FileInputStream.read CipherOutputStream.write CipherOutputStream.flush CipherOutputStream.close FileInputStream.close Cipher.doFinal
+1148;Security.addProvider Base64.getDecoder Base64.decode KeyFactory.getInstance X509EncodedKeySpec.new KeyFactory.generatePublic KeyFactory.getInstance Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.getOutputSize Cipher.doFinal
+1149;Signature.getInstance Signature.initVerify Signature.update Signature.verify
+1150;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Mac.getInstance Mac.init Mac.doFinal
+1151;Signature.getInstance Signature.initSign Signature.update Signature.sign
+1152;Signature.getInstance Signature.initVerify String.getBytes Signature.update Signature.verify
+1153;Security.addProvider String.getBytes Base64.decodeBase64 PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate KeyFactory.getAlgorithm Cipher.getInstance Cipher.init Cipher.doFinal
+1154;Security.addProvider Base64.getDecoder.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate KeyFactory.getAlgorithm Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Base64.getEncoder.encodeToString Cipher.doFinal
+1155;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPublic Key.getEncoded Base64.getEncoder.encodeToString KeyPair.getPrivate Key.getEncoded Base64.getEncoder.encodeToString
+1156;DigestAlgorithm.getAlgorithm MessageDigest.getInstance MessageDigest.update MessageDigest.digest MessageDigest.reset MessageDigest.digest
+1157;SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded SecureRandom.new SecureRandom.nextBytes Cipher.getInstance String.toUTF8Byte SecretKeySpec.new Cipher.ENCRYPT_MODE IvParameterSpec.new Cipher.init String.new Cipher.doFinal DatatypeConverter.parseBase64Binary
+1158;byte.new KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new SecureRandom.new SecureRandom.nextBytes Cipher.getInstance IvParameterSpec.new Cipher.DECRYPT_MODE Cipher.init Cipher.update Cipher.doFinal
+1160;String.getBytes DESedeKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.toUTF8Byte Cipher.doFinal Base64.encodeBase64String
+1161;Security.addProvider Base64.getDecoder Base64.decode PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate KeyFactory.getAlgorithm Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1162;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Mac.getInstance Mac.init Mac.doFinal
+1163;KeyStore.getInstance KeyStore.load KeyStore.aliases KeyStore.getKey Signature.getInstance Signature.initSign Signature.update Signature.sign
+1164;KeyManagerFactory.getInstance KeyManagerFactory.init SSLContext.getInstance SSLContext.init KeyManagerFactory.getKeyManagers
+1166;SHA256Digest.new Digest.getDigestSize byte.new SecureRandom.new SecureRandom.nextBytes KeyParameter.new String.toUTF8Byte HMac.new byte.length HMac.init HMac.update HMac.doFinal Digest.reset
+1167;Security.addProvider SecureRandom.new String.toUTF8Byte SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1168;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPublic KeyPair.getPrivate
+1169;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded Cipher.ENCRYPT_MODE Cipher.DECRYPT_MODE BouncyCastleProvider.new Security.addProvider Cipher.getInstance SecretKeySpec.new Cipher.init Cipher.doFinal
+1170;Security.addProvider Base64.getDecoder.decode X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic KeyFactory.getAlgorithm Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init String.new Cipher.doFinal
+1171;SecureRandom.new SecureRandom.nextBytes SecretKeyFactory.getInstance DESedeKeySpec.new SecretKeyFactory.generateSecret SecretKey.getEncoded Cipher.getInstance IvParameterSpec.new Cipher.DECRPYT_MODE Cipher.init Cipher.doFinal
+1172;KeyFactory.getInstance Base64.decodeBase64 PKCS8EncodedKeySpec.new KeyFactory.generatePrivate Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Base64.decodeBase64 RSAPrivateKey.getModulus.bitLength ByteArrayOutputStream.new Cipher.doFinal ByteArrayOutputStream.write ByteArrayOutputStream.toByteArray IOUtils.closeQuietly
+1173;SecureRandom.new SecretKeyFactory.getInstance String.toUTF8Byte SecretKeySpec.new SecureRandom.nextBytes SecretKeyFactory.generateSecret SecretKey.getEncoded IvParameterSpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1174;SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded Cipher.getInstance SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1175;Security.addProvider KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.DECRYPT_MODE Cipher.getInstance Cipher.init Cipher.doFinal
+1176;Security.addProvider KeyFactory.getInstance Base64.decodeBase64 X509EncodedKeySpec.new KeyFactory.generatePublic Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.getBytes RSAPublicKey.getmodulus.bitLength Base64.encodeBase64URLSafeString
+1178;SecureRandom.new String.toUTF8Byte DESedeKeySpec.new SecretKeyFactory.getInstance SecretKeyFactory.generateSecret Cipher.ENCRYPT_MODE Cipher.init Strin.toUTF8Byte Cipher.doFinal Base64.getEncoder.encode String.new
+1179;SecretKeyFactory.getInstance SecretKeyFactory.generateSecret SecretKey.getEncoded SecureRandom.new SecureRandom.nextBytes Cipher.getInstance String.toUTF8Byte SecretKeySpec.new IvParameterSpec.new Cipher.DECRYPT_MODE Cipher.init DatatypeConverter.parseBase64Binary Cipher.doFinal String.new
+1180;KeyGenerator.getInstance KeyGenerator.generateKey ObjectAccessUtil.writeToFile
+1181;byte.new SecureRandom.getInstance SecureRandom.nextBytes SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE String.toUTF8Byte IvParameterSpec.new Cipher.init Cipher.doFinal Base64.Encoder.getEncoder
+1182;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPrivate KeyPair.getPublic RSAKeyPair.new
+1183;MessageDigest.getInstance MessageDigest.digest
+1184;MessageDigest.getInstance MessageDigest.update MessageDigest.digest
+1185;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded
+1186;PBEParameterSpec.new
+1187;Base64.getDecoder.decode X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Signature.getInstance Signature.initVerify String.getBytes Signature.update Base64.getDecoder.decode Signature.verify
+1188;byte.new SecureRandom.new SecureRandom.nextBytes KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new IvParameterSpec.new Cipher.getInstance Cipher.init Cipher.doFinal
+1189;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPrivate KeyPair.getPublic ObjectAccessUtil.writeToFile ObjectAccessUtil.writeToFile
+1190;PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Siganture.getInstance Signature.initSign Signature.update Siganture.sign
+1191;Base64.getDecoder Base64.decode RSAPublicKey.getInstance RSAPublicKey.getPublicExponent RSAPublicKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic
+1192;byte.new KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new SecureRandom.new SecureRandom.nextBytes Cipher.getInstance IvParameterSpec.new Cipher.ENCRYPT_MODE Cipher.init Cipher.update Cipher.doFinal
+1193;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Mac.getInstance Mac.init Mac.doFinal
+1194;SHA256Digest.new Digest.getDigestSize byte.new SecureRandom.new SecureRandom.nextBytes KeyParameter.new String.toUTF8Byte HMac.new byte.length HMac.init HMac.update HMac.doFinal Digest.reset Cipher.getInstance SecretKeySpec.new SecureRandom.new SecureRandom.nextBytes IvParameterSpec.new Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1195;Security.addProvider KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.DECRYPT_MODE Cipher.getInstance Cipher.init FileInputStream.new.getChannel FileInputStream.new.getChannel ByteBuffer.allocate ByteBuffer.allocate FileChannel.read ByteBuffer.flip ByteBuffer.clear Cipher.doFinal ByteBuffer.flip FileOutputStream.write ByteBuffer.clear FileInputStream.close FileInputStream.close
+1196;String.getBytes SecureRandom.new SecureRandom.nextBytes IvParameterSpec.new String.getBytes KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal Base64.encodeBase64String Cipher.DECRYPT_MODE Cipher.init Base64.decodeBase64 Cipher.doFinal String.new
+1197;SecretKeyFactory.getInstance String.getBytes SecretKeyFactory.generateSecret SecretKey.getEncoded Cipher.getInstance String.getBytes SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1198;Signature.getInstance Signature.initSign String.getBytes Signature.update Signature.sign Base64.encodeBase64String
+1199;Signature.getInstance CertificateFactory.getInstance CertificateFactory.generateCertificate Certificate.getPublicKey Signature.initVerify Signature.update String.toUTF8Byte Base64.decodeBase64 Signature.verify
+1201;KeyAgreement.getInstance KeyAgreement.init KeyAgreement.doPhase KeyAgreement.generateSecret
+1202;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Mac.getInstance Mac.init Mac.doFinal
+1203;String.toUTF8Byte SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.DECRYPT_MODE Cipher.init Cipher.doFinal
+1204;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded
+1205;PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Cipher.getInstance Cipher.init ByteArrayOutputStream.write Cipher.doFinal ByteArrayOutputStream.write ByteArrayOutputStream.close
+1206;Security.addProvider Base64.decodeBase64 PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Cipher.getInstance Cipher.ENCRYPT_MODE Cipher.init String.toUTF8Byte Cipher.doFinal Base64.encodeBase64String
+1207;KeyPairGenerator.getInstance KeyPairGenerator.initialize KeyPairGenerator.generateKeyPair KeyPair.getPrivate KeyPair.getPublic FileOutputStream.new ObjectOutputStream.new ObjectOutputStream.writeObject FileOutputStream.new ObjectOutputStream.new ObjectOutputStream.writeObject
+1208;Cipher.getInstance String.toUTF8Byte SecretKey.getEncoded SecretKeySpec.new Cipher.ENCRYPT_MODE Cipher.init Cipher.doFinal
+1209;Securtiy.addProvider KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded SecretKeySpec.new Cipher.getInstance Cipher.init Cipher.doFinal
+1210;KeyGenerator.getInstance KeyGenerator.init KeyGenerator.generateKey SecretKey.getEncoded
+1211;Base64.encode String.new X509EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePublic Signature.getInstance Signature.initVerify Signature.update String.getBytes Base64.decode Signature.verify
+1212;PKCS8EncodedKeySpec.new KeyFactory.getInstance KeyFactory.generatePrivate Cipher.getInstance Cipher.init ByteArrayOutputStream.write Cipher.doFinal ByteArrayOutputStream.write ByteArrayOutputStream.close
+1213;KeyGenerator.getInstance KeyGenerator.generateKey String.toUTF8Byte SecretKey.getEncoded SecretKeySpec.new Mac.getInstance Mac.init Mac.doFinal Base64Util.getInstance.encode
+;
